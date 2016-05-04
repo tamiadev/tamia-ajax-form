@@ -1,0 +1,44 @@
+{
+  "name": "tamia-ajax-form",
+  "description": "Forms ajaxification for Tâmia",
+  "version": "0.1.0",
+  "scripts": {
+    "test": "npm run lint",
+    "prepublish": "npm run compile",
+    "lint": "eslint src",
+    "compile": "babel -d lib/ src/"
+  },
+  "homepage": "http://tamiadev.github.io/tamia/",
+  "author": {
+    "name": "Artem Sapegin",
+    "url": "http://sapegin.me/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/tamiadev/tamia-ajax-form.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tamiadev/tamia-ajax-form/issues"
+  },
+  "license": "MIT",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "engines": {
+    "node": ">=5.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "~6.8.0",
+    "babel-eslint": "~6.0.4",
+    "babel-preset-tamia": "~6.5.0",
+    "eslint": "~1.10.3",
+    "eslint-config-tamia": "~1.0.0"
+  },
+  "dependencies": {
+    "form-serialize": "~0.7.1",
+    "lodash": "~4.11.2",
+    "reqwest": "~2.0.5",
+    "tamia": "~2.0.6"
+  }
+}
